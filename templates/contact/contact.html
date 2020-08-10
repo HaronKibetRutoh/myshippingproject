@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Contact us
+{% endblock title %}
+
+
+{% block content %}
+    <form class="contact-form" action="" method="post">
+        {% csrf_token %}
+        <p class="contact-form-heading">We love receiving feedback…</p>
+        <p class="contact-form-caption">…particularly negative feedback because most people are too polite to leave it.</p>
+        <p class="contact-form-caption">So if there’s anything you think we could do to improve—however small—please let us know.</p>
+        <p class="contact-form-caption">We respond to all feedback personally.</p>
+        <div class="contact-fields">
+            <p class="contact-form-label">{{form.name.label}} <span class="optional">(optional)</span></p>
+            <div>{{form.name}}</div>
+        </div>
+        <div class="contact-fields">
+            <p  class="contact-form-label">{{form.email.label}} <span class="optional">(optional)</span></p>
+            <div>{{form.email}}</div>
+        </div>
+        <div class="contact-fields">
+            <p  class="contact-form-label">{{form.message.label}}</p>
+            <div>{{form.message}}</div>
+        </div>
+        <div><input class="contact-button" type="submit" value="Get in touch"></div>
+    </form>
+{% endblock content %}
+    

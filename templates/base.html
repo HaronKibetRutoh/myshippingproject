@@ -1,0 +1,72 @@
+{% load static %}
+{% load fontawesome_5 %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+    {% block title %}
+        Shipping
+    {% endblock title %}
+        </title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% fontawesome_5_static %}
+    <script type="text/javascript">
+        var user = '{{request.user}}'
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="logo"><a href="{% url 'quote:home' %}"><strong>ShipEasy</strong></a></div>
+                    <div class="contact">
+                        <div class="phone"><a href="tel:+254718448461">Call Us</a></div>
+                        <div class="phone"><a href="mailto:kibetharon@outlook.com">Email us</a></div>
+                        <div class="menu">
+                            <div class="line-1"></div>
+                            <div class="line-2"></div>
+                            <div class="line-3"></div>
+                        </div>
+                    </div>
+                <ul class="navLinks">
+                    <li><a href="{% url 'quote:about' %}">Who we are</a></li>
+                    <!-- <li><a href="">How it works</a></li> -->
+                    <li><a href="{% url 'contact:contact' %}">Contact us</a></li>
+                    {% if user.is_authenticated %}
+                    <li><a class="logout" href="{% url 'accounts:logout' %}">Logout</a></li>
+                    {% else %}
+                    <li><a class="login" href="{% url 'accounts:signin' %}">Login</a></li>
+                    <li><a class="register" href="{% url 'accounts:register' %}">SignUp</a></li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                
+                {% block content %}
+                    
+                {% endblock content %}
+                    
+            </section>
+        </main>
+        <footer>
+            <div class="footer-links">
+                <li><a href="{% url 'quote:about' %}">About</a></li>
+                <li><a href="{% url 'contact:contact' %}">Contact us</a></li>
+                {% if user.is_authenticated %}
+                    <li><a href="{% url 'accounts:logout' %}">Logout</a></li>
+                    {% else %}
+                    <li><a href="{% url 'accounts:signin' %}">Login</a></li>
+                    <li><a href="{% url 'accounts:register' %}">SignUp</a></li>
+                    {% endif %}
+                <li><a href="mailto:kibetharon@outlook.com">Email us</a></li>
+                <li><a href="">Call us</a></li>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="{% static 'js/base.js' %}"></script>
+</body>
+</html>

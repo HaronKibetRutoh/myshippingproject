@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Get quote
+{% endblock title %}
+
+
+{% block content %}
+  <form  class="quote-form" action="" method="POST">
+    <p class="title-1"><strong>Personal Info</strong></p>
+    <div class="personal-info">
+      <div class="field">{{form.name}}</div>
+      <div class="field">{{form.email}}</div>
+      <div class="field">{{form.phone}}</div>
+    </div>
+    <p class="title"><strong>Luggage Info</strong></p>
+    <div class="luggage-info">
+      <div class="field">{{form.luggage_type}}</div>
+      <div class="field">{{form.luggage_weight}}</div>
+      <div class="field">{{form.luggage_dimensions}}</div>
+    </div>
+    <p class="title"><strong>Shipping Info</strong></p>
+    <div class="shipping-info">
+      <div class="field">{{form.origin}}</div>
+      <div class="field">{{form.destination}}</div>
+      <div class="field">{{form.mode}}</div>
+    </div>
+    <div><input class="quote-submit-button" type="submit" value="Get quote"></div>
+    {% csrf_token %}
+  </form>
+{% endblock content %}
+  

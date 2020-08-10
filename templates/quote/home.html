@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <div class="quick-benefits-bar">
+        <div class="benefits-bar">
+            <li><span class="check">&#10004;</span> Save money</li>
+            <li><span class="check">&#10004;</span> Save time</li>
+            <li><span class="check">&#10004;</span> Quality Guaranteed</li>
+        </div>
+    </div>
+    <div class="container">
+            <h1 class="offer-heading">Do you want to ship products from China to Kenya but don't know where to start and how to find genuine suppliers? Are you stuck finding the best, reliable, and trusted shipping agents to ship your cargo from China to Kenya?</h1>
+           
+            <p class="offer-subheading">Well, we connect you with genuine products suppliers in China and connect you with trusted shipping agents, so it becomes easier for you to import from China to Kenya. <stron">Our services are FREE</strong></p>
+            <div class="cta-btns">
+                <a class="shipping-btn" href="{% url 'quote:shopping' %}">Connect me with genuine Chinese suppliers & trusted shipping agents<span class="ship-arrow">&#10148;</span></a>
+                <a class="shopping-btn" href="{% url 'quote:about' %}">I want to know more about your services...<span class="shop-arrow">&#10148;</span></a>
+            </div>
+    </div>
+{% endblock content %}
+    

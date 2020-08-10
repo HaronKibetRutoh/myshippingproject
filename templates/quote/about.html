@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    About Us
+{% endblock title %}
+
+
+{% block content %}
+    <div class="about-container">
+        <h1>Who we are and what we do</h1>
+        <p class="intro">We are a team of importing enthusiasts who want to help you import confidently from China to Kenya.We started this company to make it easy for you to import whatever you want from China to Kenya. Whether you want to import for resale or you want to import for personal use, we are the right people to help you.</p>
+        <p>For a long time, we saw questions like the following...</p>
+        <div class="questions">
+            <li>How do I find genuine product suppliers on Alibaba?</li>
+            <li>What are trusted and reliable shipping agents from China to Kenya?</li>
+            <li>How do I trust suppliers online?</li>
+            <li>What's the process of importing from China to Kenya?</li>
+            <li>Do I have to go to China to source goods by myself?</li>
+            <li>How do I pay my supplier online?</li>
+        </div>
+        <p>And many more questions...</p>
+        <p class="solution">So we figured out a perfect solution to these questions.That's why we started this company. Our mission is to remove all the obstacles that make it hard for you to import confidently from China to Kenya</p>
+        <p>With us...</p>
+        <div class="about-pains">
+            <li><i class="fas fa-times"></i>You don't have to worry about finding genuine suppliers on Alibaba</li>
+            <li><i class="fas fa-times"></i>You don't have to worry about importing fake products</li>
+            <li><i class="fas fa-times"></i>You don't have risk losing money to online cons pretending to be genuine suppliers</li>
+            <li><i class="fas fa-times"></i>You don't have to waste time looking for trusted and reliable agents to ship your cargo</li>
+            <li><i class="fas fa-times"></i>You don't have to waste time sorting through Alibaba website filtering genuine suppliers</li>
+            <li><i class="fas fa-times"></i>You don't have to know all the process involved importing to Kenya from China</li>
+            <li><i class="fas fa-times"></i>You don't have to worry about your cargo going missing</li>
+        </div>
+        <p>We simply take all the hard work away. Here's what you will benefit by using our services</p>
+        <div class="gains">
+            <li><span class="check">&#10004;</span> We guarantee you value for your money by importing quality products only</li>
+            <li><span class="check">&#10004;</span> We save you money since we source directly from factories where they sell goods at cheaper cost</li>
+            <li><span class="check">&#10004;</span> We save you time that you would have used looking for genuine suppliers</li>
+            <li><span class="check">&#10004;</span> We save you time that you would have used looking for trusted shipping agents</li>
+            <li><span class="check">&#10004;</span> Your money is secure with us since we eliminate the risk of you getting conned</li>
+            <li><span class="check">&#10004;</span> Our services are absolutely free</li>
+        </div>
+        <div class="sourcing-btn">
+            <a href="{% url 'quote:shopping' %}">Help me souce products from China</a>
+        </div>
+            
+    </div>
+{% endblock content %}
+    

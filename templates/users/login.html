@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    Login
+{% endblock title %}
+
+
+{% block content %}
+    <div class="login-container">
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <p class="login-message">{{message}}</p>
+            {% endfor %}
+        </ul>
+    {% endif %}
+   <form class="login-form" action="" method="POST">
+       <p class="login-form-caption">Please login to continue</p>
+       <div>
+           <p class="login-form-labels">Email</p>
+           <div><input class="login-input" type="text" name="email" id="email" required></div>
+       </div>
+       <div>
+        <p class="login-form-labels">Password</p>
+        <div><input class="login-input" type="password" name="password" id="password" required></div>
+    </div>
+
+    <div>
+        <input class="login-button" type="submit" value="Login">
+    </div>
+
+    <p class="register-link">Don't have an account? <a style="color: #f2f2f2; font-weight: bold;" href="{% url 'users:register' %}">Register</a></p>
+    {% csrf_token %}
+   </form>
+    </div>
+{% endblock content %}

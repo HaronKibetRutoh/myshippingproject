@@ -1,0 +1,2478 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    /* background: linear-gradient(180deg,rgba(144,174,226,0),rgba(68,52,247,.33)),linear-gradient(45deg,rgba(0,122,255,1) 0,#7f50f1 100%);; */
+    /* background: #035aa6; */
+    background: #342ead;
+}
+
+nav{
+    height:15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    border-bottom: 0.1rem solid rgba(23,204,189,0.21);
+}
+
+.logo{
+    font-size: 3rem;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 0.5em;
+    z-index: 100;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #edf7ff;
+    font-weight: bold;
+}
+
+.contact{
+    display: flex;
+    width: 20%;
+    justify-content: space-evenly;
+}
+
+.phone a{
+    text-decoration: none;
+    color: #1b1b2f;
+    letter-spacing: 0.1rem;
+    /* border-bottom: 0.2rem solid #fd3a5c; */
+    padding-bottom: 0.2em;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    opacity: 1;
+    color: #edf7ff;
+}
+
+.phone a:hover{
+    opacity: 0.8;
+}
+
+.navLinks{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navLinks li{
+    list-style: none;
+}
+
+.navLinks li a{
+    text-decoration: none;
+    color: #edf7ff;
+    letter-spacing: 0.1rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.navLinks li a.active{
+    color: #fd3a5c;
+}
+
+.navLinks li a:hover{
+    opacity: 0.8;
+}
+
+.login{
+    border: 0.1rem solid #f2f2f2;
+    padding: 0.2em 0.5em;
+    border-radius: 0.3rem;
+}
+
+.register{
+    border: 0.1rem solid #f2f2f2;
+    padding: 0.2em 0.5em;
+    border-radius: 0.3rem;
+}
+
+.logout{
+    border: 0.1rem solid #f2f2f2;
+    padding: 0.2em 0.5em;
+    border-radius: 0.3rem;
+}
+
+.menu{
+    display: none;
+    z-index: 10;
+}
+
+.line-1, .line-2, .line-3{
+    width: 3rem;
+    height: 0.2rem;
+    margin-top: 0.5em;
+    background: #edf7ff;
+    font-weight: bold;
+    transition: 1s;
+}
+
+main{
+    min-width: 100%;
+}
+
+section{
+    min-width: 100%;
+    min-height: 85vh;
+}
+
+footer{
+    min-width: 100%;
+    min-height: 10vh;
+    border-top: 0.1rem solid grey;
+    background: rgba(23,204,189,0.08);
+}
+
+.footer-links{
+    width: 55%;
+    margin: 0 auto;
+    padding: 3em 0em;
+}
+
+.footer-links li{
+    list-style: none;
+    padding-top: 1em;
+    border-bottom: 0.1rem solid #edf7ff;
+}
+
+.footer-links li a{
+    color: #edf7ff;
+    display: inline-block;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding-bottom: 0.5em;
+    
+}
+
+.footer-links li a:hover{
+    opacity: 0.8;
+}
+
+.quick-benefits-bar{
+    /* background: ; */
+    /* border-top: 0.1rem solid rgba(23,204,189,0.21); */
+    border-bottom: 0.1rem solid rgba(23,204,189,0.21);
+}
+
+.benefits-bar{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.5em 0;
+}
+
+.benefits-bar li{
+    list-style: none;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    color: #edf7ff;
+}
+
+.check{
+    color: #edf7ff;
+}
+
+.container{
+    width: 55%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    text-align: left;
+}
+
+.offer-heading{
+    font-size: 3.5rem;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0.5em;
+    color: #edf7ff;
+}
+
+
+.fa-times{
+    color: #fd3a5c;
+    padding: 0.5em;
+}
+
+
+.offer-subheading{
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif; 
+    line-height: 3rem;
+    margin-top: 1em;
+    color: #f2f2f2;
+}
+
+.cta-btns{
+    margin-top: 2.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.shipping-btn{
+    padding: 1em;
+    width: 100%;
+    color: #edf7ff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    /* border-radius: 5rem; */
+    border-radius: 0.5rem;
+    transition: 1s;
+    box-shadow: 0.1rem 0.1rem 0.8rem black;
+    background: red;
+}
+
+.shopping-btn{
+    /* background: rgb(76, 57, 223); */
+    background: #21bf73;
+    padding: 1em;
+    width: 100%;
+    color: #edf7ff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    /* border-radius: 5rem; */
+    border-radius: 0.5rem;
+    transition: 1s;
+    box-shadow: 0.1rem 0.1rem 0.8rem gray;
+    margin-top: 1.5em;
+    text-align: center;
+}
+
+.ship-arrow{
+    color: #f2f2f2;
+    transition: 1s;
+    margin-left: 0.5em;
+}
+
+.shop-arrow{
+    color: #edf7ff;
+    transition: 1s;
+    margin-left: 0.5em;
+}
+
+.shipping-btn:hover .ship-arrow{
+    margin-left: 2em;
+}
+
+.shopping-btn:hover .shop-arrow{
+    margin-left: 2em;
+}
+
+.register-form{
+    width: 35%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 2em;
+    color: #edf7ff;
+}
+
+.register-form-caption{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 1.5em;
+}
+
+.register-fields-labels{
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 0.3em;
+}
+
+.field{
+    padding-top: 1em;
+}
+
+.login-link{
+    font-size: 1.6rem;
+    margin-top: 1.5em;
+}
+
+.register-password-errors{
+    margin-top: 1em;
+}
+
+.password-requirements{
+    margin-top: 2em;
+}
+
+.password-requirements li{
+    padding-left: 0.5em;
+}
+
+.password-requirements p{
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.user-register-button{
+    width: 100%;
+    margin-top: 1em;
+    padding: 0.5em 0em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    background: green;
+    border-style: none;
+    color: #edf7ff;
+    cursor: pointer; 
+    border-radius: 0.6rem;
+    box-shadow: 0.1rem 0.1rem 1rem black;
+}
+
+
+.login-container{
+    width: 35%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 2em;
+    color: #edf7ff;
+}
+
+.login-form{
+    margin-top: 5em;
+}
+
+.login-form-caption{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 1.5em;
+}
+
+.login-form-labels{
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 0.3em;
+}
+
+.login-input{
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 1em;
+    border-radius: 0.5rem;
+}
+
+.login-input:focus{
+    border: 0.1em solid green;
+    box-shadow: 0.1rem 0.1rem 0.5rem green;
+    border-radius: 0.6rem;
+    padding: 0.5em;
+}
+
+.register-link{
+    font-size: 1.6rem;
+    margin-top: 1.5em;
+}
+
+.login-message{
+    color: red;
+    font-size: 1.8rem;
+    background: lightgray;
+    padding: 0.5em;
+}
+
+.login-button{
+    width: 100%;
+    margin-top: 1em;
+    padding: 0.5em 0em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    background: green;
+    border-style: none;
+    color: #edf7ff;
+    cursor: pointer; 
+    border-radius: 0.6rem;
+    box-shadow: 0.1rem 0.1rem 1rem black;
+    letter-spacing: 0.1rem;
+}
+
+
+.quote-form{
+    width: 35%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    color: #edf7ff;
+}
+
+.title-1{
+    font-size: 1.8rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title{
+    margin-top: 2em;
+    font-size: 1.8rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.field{
+    margin-bottom: 0.7em;
+}
+
+.input{
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 0.5rem;
+}
+
+.input:focus{
+    border: 0.1em solid green;
+    box-shadow: 0.1rem 0.1rem 0.5rem green;
+    border-radius: 0.6rem;
+    padding: 0.5em;
+}
+
+.quote-submit-button{
+    width: 100%;
+    margin-top: 1em;
+    padding: 0.5em 0em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    background: green;
+    border-style: none;
+    color: #edf7ff;
+    cursor: pointer;
+    border-radius: 0.6rem;
+    box-shadow: 0.1rem 0.1rem 1rem black;
+    opacity: 0.9;
+}
+
+.quote-submit-button:hover{
+    opacity: 1;
+}
+
+.contact-form{
+    width: 55%;
+    height: auto;
+    margin: 0 auto;
+    padding: 3em 0em;
+    color: #edf7ff;
+}
+
+.contact-input{
+    width: 70%;
+    padding: 0.7em;
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 0.6rem;
+}
+
+.contact-input:focus{
+    border: 0.1em solid green;
+    box-shadow: 0.1rem 0.1rem 0.5rem green;
+    border-radius: 0.6rem;
+    padding: 0.7em;
+}
+
+.message{
+    width: 100%;
+    padding: 1em;
+    font-size: 1.8rem;
+    border-radius: 0.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.message:focus{
+    border: 0.1em solid green;
+    box-shadow: 0.1rem 0.1rem 0.5rem green;
+    border-radius: 0.6rem;
+    padding: 0.8em;
+}
+
+.contact-fields{
+    margin-top: 1.5em;
+}
+
+.contact-form-heading{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 1em;
+    line-height: 3.5rem;
+}
+
+.contact-form-caption{
+    font-size: 1.8rem;
+    margin-bottom: 1em;
+}
+
+.contact-form-label{
+    padding: 0.5em 0em;
+    font-size: 1.8rem;
+}
+
+
+.contact-button{
+    width: 100%;
+    margin-top: 1.5em;
+    padding: 0.5em 0em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    background: green;
+    border-style: none;
+    color: #edf7ff;
+    cursor: pointer;  
+    border-radius: 0.6rem;
+    box-shadow: 0.1rem 0.1rem 1rem black;
+}
+
+.shopping-request-form{
+    width: 55%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 3em;
+    margin-bottom: 3em; 
+    color: #edf7ff;
+}
+
+.success-page{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 3em;
+    text-align: center;
+    height: auto;
+}
+
+.success{
+    background: green;
+    padding: 1em 0em;
+    color: #edf7ff;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 0.5rem;
+    font-size: 1.6rem;
+}
+
+.about-container{
+    width: 50%;
+    margin: 0 auto;
+    height: auto;
+    margin-top: 3em;
+    padding-bottom: 5em;
+}
+
+.about-container h1{
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    color: #edf7ff;
+}
+
+.about-container p{
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+    width: 75%;
+    line-height: 2;
+    color: #edf7ff;
+}
+
+.questions{
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.questions li{
+    list-style: decimal-leading-zero;
+    font-size: 1.8rem;
+    margin-top: 1em;
+    font-weight: bold;
+    color: #edf7ff;
+}
+
+.intro{
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.solution{
+    margin-top: 3em;
+    margin-bottom: 3em; 
+}
+
+.about-pains{
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.about-pains li{
+    list-style: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 1em;
+    color: #edf7ff;
+}
+
+.gains{
+    margin-top: 3em;
+    margin-bottom: 5em;
+}
+
+.gains li{
+    list-style: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 1em;
+    color: #edf7ff;
+}
+
+.sourcing-btn{
+    width: 100%;
+    background: #21bf73;
+    padding: 1em 0em;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: 1s;
+    box-shadow: 0.1rem 0.1rem 0.8rem black;
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sourcing-btn a{
+    color: #edf7ff;
+    text-decoration: none;
+}
+
+
+/* todo meadia queries */
+
+/* !? max width 768px */
+
+@media screen and (max-width: 768px){
+    .wrapper{
+        position: absolute;
+        width: 100%;
+        overflow-x: hidden;
+    }
+ 
+    .navLinks{
+        display: flex;
+        flex-direction: column;
+        background: #000;
+        width: 100%;
+        z-index: 1;
+        height: 100vh;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .navLinks li{
+        opacity: 0;
+    }
+
+    .navLinks li a{
+        text-decoration: none;
+        color: #edf7ff;
+        letter-spacing: 0.1rem;
+        font-size: 4rem;
+        font-weight: bold;
+    }
+
+    .active{
+        transform: translateX(0);
+    }
+
+    .menu{
+        display: block;
+    }
+
+    @keyframes navLinkFade{
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .toggle .line-1{
+        transform: rotate(-45deg) translate(-5px, 5px);
+    }
+
+    .toggle .line-2{
+        /* opacity: 0; */
+        transform: translateX(-10000%);
+    }
+
+    .toggle .line-3{
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+
+    .contact{
+        display: flex;
+        width: 98%;
+        height: 7vh;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5em;
+    }
+
+    .quick-benefits-bar{
+        display: none;
+    }
+
+
+    .container{
+        width: 100%;
+    }
+
+    .offer-heading{
+        font-size: 2.5rem;
+        font-family: 'Open Sans', sans-serif;
+        padding: 0.5em 0.8em;
+    }
+
+    .pains{
+        text-align: left;
+        margin-top: 0em;
+        padding: 0.5em 1em;
+    }
+    
+    .fa-times{
+        color: #fd3a5c;
+        padding: 0.5em;
+    }
+    
+    .pain-1, .pain-2, .pain-3{
+        font-size: 1.6rem;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .offer-subheading{
+        font-size: 1.7rem;
+        font-family: 'Roboto', sans-serif; 
+        line-height: 3rem;
+        padding: 0.5em 0.8em;
+        margin-top: 0em;
+    }
+
+    .cta-btns{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0.5em 0.8em;
+        margin-top: 2em;
+    }
+    .shipping-btn{
+        padding: 0.8em;
+        width: 100%;
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        box-shadow: 0.1rem 0.1rem 0.8rem black;
+        opacity: 1;
+        text-align: center;
+    }
+    
+    .shopping-btn{
+        background: #21bf73;
+        border-style: none;
+        padding: 0.8em;
+        width: 100%;
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        box-shadow: 0.1rem 0.1rem 0.8rem gray;
+        margin-left: 0em;
+        margin-top: 1.5em;
+        text-align: center;
+        opacity: 1;
+    }
+    
+
+    nav{
+        height:17vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        border-style: none;
+        text-align: center;
+        padding-top: 1em;
+    }
+
+    .logo{
+        font-size: 2.8rem;
+        font-weight: bold;
+    }
+
+    .phone{
+        margin-top: 0.8em;
+    }
+
+    .phone a{
+        opacity: 1;
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    footer{
+        margin-top: 1em;
+    }
+
+    .footer-links{
+        width: 95%;
+    }
+
+    .about-container{
+        width: 95%;
+        margin: 0 auto;
+        height: auto;
+        margin-top: 2em;
+        padding: 0.5em 0.8em;
+        padding-bottom: 5em;
+    }
+
+    .about-container h1{
+        font-size: 2rem;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .about-container p{
+        font-size: 1.6rem;
+        font-family: 'Roboto', sans-serif;
+        width: 100%;
+        line-height: 2;
+    }
+    
+    .questions{
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+    
+    .questions li{
+        list-style: lower-roman;
+        font-size: 1.6rem;
+        margin-top: 1em;
+        font-weight: normal;
+    }
+    
+    .intro{
+        margin-top: 1em;
+        margin-bottom: 3em;
+    }
+    
+    .solution{
+        margin-top: 3em;
+        margin-bottom: 3em; 
+    }
+    
+    .about-pains{
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+    
+    .about-pains li{
+        list-style: none;
+        font-size: 1.6rem;
+        font-weight: normal;
+        margin-top: 1em;
+    }
+    
+    .gains{
+        margin-top: 3em;
+        padding-bottom: 1em;
+    }
+    
+    .gains li{
+        list-style: none;
+        font-size: 1.6rem;
+        font-weight: normal;
+        margin-top: 1em
+    }
+    
+    .sourcing-btn{
+        background: #21bf73;
+        width: 100%;
+        font-size: 1.6rem;
+        font-weight: normal;
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        box-shadow: 0.1rem 0.1rem 1rem black;
+    }
+
+    .register-form{
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+        padding: 3em 0.8em;
+    }
+    
+    .register-form-caption{
+        font-size: 1.6rem;
+        font-weight: normal;
+        font-family: 'Open Sans', sans-serif;
+        padding-bottom: 1.5em;
+    }
+    
+    .register-fields-labels{
+        font-size: 1.6rem;
+        font-family: 'Roboto', sans-serif;
+        padding-bottom: 0.3em;
+    }
+    
+    .field{
+        padding-top: 1em;
+    }
+    
+    .login-link{
+        font-size: 1.6rem;
+        margin-top: 1.5em;
+    }
+    
+    .register-password-errors{
+        margin-top: 1em;
+    }
+    
+    .password-requirements{
+        margin-top: 1.6em;
+    }
+    
+    .password-requirements li{
+        padding-left: 0.5em;
+    }
+    
+    .password-requirements p{
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+    
+    .user-register-button{
+        width: 100%;
+        margin-top: 1em;
+        padding: 0.5em 0em;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.6rem;
+        background: green;
+        border-style: none;
+        cursor: pointer; 
+        border-radius: 0.6rem;
+        box-shadow: 0.1rem 0.1rem 1rem black;
+    }
+    .login-container{
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 2em;
+    }
+    
+    .login-form{
+        margin-top: 5em;
+        padding: 0em 0.8em;
+    }
+    
+    .login-form-caption{
+        font-size: 2rem;
+        font-weight: normal;
+        font-family: 'Open Sans', sans-serif;
+        padding-bottom: 1.5em;
+    }
+    
+    .login-form-labels{
+        font-size: 1.6rem;
+        font-family: 'Roboto', sans-serif;
+        padding-bottom: 0.3em;
+    }
+    
+    .login-input{
+        width: 100%;
+        padding: 0.5em;
+        font-size: 1.6rem;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 1em;
+        border-radius: 0.5rem;
+    }
+    
+    .login-input:focus{
+        border: 0.1em solid green;
+        box-shadow: 0.1rem 0.1rem 0.5rem green;
+        border-radius: 0.6rem;
+        padding: 0.5em;
+    }
+    
+    .register-link{
+        font-size: 1.6rem;
+        margin-top: 1.5em;
+    }
+    
+    .login-message{
+        color: red;
+        font-size: 1.6rem;
+        background: lightgray;
+        padding: 0.5em;
+    }
+    
+    .login-button{
+        width: 100%;
+        margin-top: 1em;
+        padding: 0.5em 0em;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.6rem;
+        background: green;
+        border-style: none;
+        cursor: pointer; 
+        border-radius: 0.6rem;
+        box-shadow: 0.1rem 0.1rem 1rem black;
+    }
+    .contact-form{
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+        padding: 3em 0.8em;
+    }
+    
+    .contact-input{
+        width: 70%;
+        padding: 0.7em;
+        font-size: 1.6rem;
+        font-family: 'Roboto', sans-serif;
+        border-radius: 0.6rem;
+    }
+    
+    .contact-input:focus{
+        border: 0.1em solid green;
+        box-shadow: 0.1rem 0.1rem 0.5rem green;
+        border-radius: 0.6rem;
+        padding: 0.7em;
+    }
+    
+    .message{
+        width: 100%;
+        padding: 1em;
+        font-size: 1.6rem;
+        border-radius: 0.6rem;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .message:focus{
+        border: 0.1em solid green;
+        box-shadow: 0.1rem 0.1rem 0.5rem green;
+        border-radius: 0.6rem;
+        padding: 0.8em;
+    }
+    
+    .contact-fields{
+        margin-top: 1.5em;
+    }
+    
+    .contact-form-heading{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 1em;
+        line-height: 3.5rem;
+    }
+    
+    .contact-form-caption{
+        font-size: 2rem;
+        margin-bottom: 1em;
+    }
+    
+    .contact-form-label{
+        padding: 0.5em 0em;
+        font-size: 2rem;
+    }
+    
+    .optional{
+        opacity: 0.6;
+    }
+    
+    .contact-button{
+        width: 100%;
+        margin-top: 1.5em;
+        padding: 0.5em 0em;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2rem;
+        font-weight: bold;
+        background: green;
+        border-style: none;
+        cursor: pointer;  
+        border-radius: 0.6rem;
+        box-shadow: 0.1rem 0.1rem 1rem black;
+    }
+
+    .shopping-request-form{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 3em 0.8em;
+    }
+}
+
+/* !? max-width 900px */
+@media screen and (max-width: 900px) and (min-width: 769px) {
+    .wrapper{
+        position: absolute;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .navLinks{
+        display: flex;
+        flex-direction: column;
+        background: #000;
+        width: 100%;
+        z-index: 1;
+        height: 100vh;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .navLinks li{
+        opacity: 0;
+    }
+
+    .navLinks li a{
+        text-decoration: none;
+        color: #edf7ff;
+        letter-spacing: 0.1rem;
+        font-size: 4rem;
+        font-weight: bold;
+    }
+
+    .active{
+        transform: translateX(0%);
+    }
+
+   html{
+       overflow-x: hidden;
+   }
+
+    .menu{
+        display: block;
+    }
+
+    @keyframes navLinkFade{
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .toggle .line-1{
+        transform: rotate(-45deg) translate(-5px, 5px);
+    }
+
+    .toggle .line-2{
+        opacity: 0;
+    }
+
+    .toggle .line-3{
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+
+    .contact{
+        display: flex;
+        width: 98%;
+        height: 7vh;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5em;
+    }
+
+    .quick-benefits-bar{
+        display: none;
+    }
+
+
+    .container{
+        width: 80%;
+    }
+
+    .offer-heading{
+        font-size: 2.8rem;
+        font-family: 'Open Sans', sans-serif;
+        padding: 0.5em 0.8em;
+        line-height: 1.5;
+    }
+    
+    .fa-times{
+        color: #fd3a5c;
+        padding: 0.5em;
+    }
+    
+    
+    .offer-subheading{
+        font-size: 1.8rem;
+        font-family: 'Roboto', sans-serif; 
+        line-height: 3rem;
+        padding: 0.5em 0.8em;
+        padding-top: 1.5em;
+        margin-top: 0em;
+    }
+
+    .cta-btns{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 2em 0em;
+    }
+    .shipping-btn{
+        padding: 0.8em;
+        width: 100%;
+        font-size: 2rem;
+        font-weight: normal;
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        box-shadow: 0.1rem 0.1rem 0.8rem black;
+        opacity: 1;
+        text-align: center;
+        background: red;
+    }
+    
+    .shopping-btn{
+        /* background: rgb(76, 57, 223); */
+        border-style: none;
+        padding: 0.8em;
+        width: 100%;
+        font-size: 2rem;
+        font-weight: normal;
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        box-shadow: 0.1rem 0.1rem 0.8rem gray;
+        margin-left: 0em;
+        margin-top: 1.5em;
+        text-align: center;
+        opacity: 1;
+    }
+    
+
+    nav{
+        height:17vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        border-style: none;
+        text-align: center;
+    }
+
+    .logo{
+        font-size: 2.8rem;
+    }
+
+    .phone{
+        margin-top: 0.8em;
+    }
+
+    .phone a{
+        opacity: 1;
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: normal;
+    }
+
+    footer{
+        margin-top: 0em;
+    }
+
+    .footer-links li a{
+        font-size: 2rem;
+        
+    }
+
+    .footer-links{
+        width: 80%;
+    }
+
+    .about-container{
+        width: 80%;
+        margin: 0 auto;
+        height: auto;
+        margin-top: 2em;
+        padding: 0.5em 0.8em;
+        padding-bottom: 5em;
+    }
+
+    .about-container h1{
+        font-size: 2rem;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .about-container p{
+        font-size: 1.6rem;
+        font-family: 'Roboto', sans-serif;
+        width: 100%;
+        line-height: 2;
+    }
+    
+    .questions{
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+    
+    .questions li{
+        list-style: lower-roman;
+        font-size: 1.6rem;
+        margin-top: 1em;
+        font-weight: normal;
+    }
+    
+    .intro{
+        margin-top: 1em;
+        margin-bottom: 3em;
+    }
+    
+    .solution{
+        margin-top: 3em;
+        margin-bottom: 3em; 
+    }
+    
+    .about-pains{
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+    
+    .about-pains li{
+        list-style: none;
+        font-size: 1.6rem;
+        font-weight: normal;
+        margin-top: 1em;
+    }
+    
+    .gains{
+        margin-top: 3em;
+        padding-bottom: 1em;
+    }
+    
+    .gains li{
+        list-style: none;
+        font-size: 1.6rem;
+        font-weight: normal;
+        margin-top: 1em
+    }
+    
+    .sourcing-btn{
+        background: #21bf73;
+        width: 100%;
+        font-size: 1.6rem;
+        font-weight: normal;
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        box-shadow: 0.1rem 0.1rem 1rem black;
+    }
+
+    .register-form{
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        padding: 3em 0.8em;
+    }
+    
+    .register-form-caption{
+        font-size: 1.6rem;
+        font-weight: normal;
+        font-family: 'Open Sans', sans-serif;
+        padding-bottom: 1.5em;
+    }
+    
+    .register-fields-labels{
+        font-size: 1.6rem;
+        font-family: 'Roboto', sans-serif;
+        padding-bottom: 0.3em;
+    }
+    
+    .field{
+        padding-top: 1em;
+    }
+    
+    .login-link{
+        font-size: 1.6rem;
+        margin-top: 1.5em;
+    }
+    
+    .register-password-errors{
+        margin-top: 1em;
+    }
+    
+    .password-requirements{
+        margin-top: 1.6em;
+    }
+    
+    .password-requirements li{
+        padding-left: 0.5em;
+    }
+    
+    .password-requirements p{
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+    
+    .user-register-button{
+        width: 100%;
+        margin-top: 1em;
+        padding: 0.5em 0em;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.6rem;
+        background: green;
+        border-style: none;
+        cursor: pointer; 
+        border-radius: 0.6rem;
+        box-shadow: 0.1rem 0.1rem 1rem black;
+    }
+    .login-container{
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 2em;
+    }
+    
+    .login-form{
+        margin-top: 5em;
+        padding: 0em 0.8em;
+    }
+    
+    .login-form-caption{
+        font-size: 2rem;
+        font-weight: normal;
+        font-family: 'Open Sans', sans-serif;
+        padding-bottom: 1.5em;
+    }
+    
+    .login-form-labels{
+        font-size: 1.6rem;
+        font-family: 'Roboto', sans-serif;
+        padding-bottom: 0.3em;
+    }
+    
+    .login-input{
+        width: 100%;
+        padding: 0.5em;
+        font-size: 1.6rem;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 1em;
+        border-radius: 0.5rem;
+    }
+    
+    .login-input:focus{
+        border: 0.1em solid green;
+        box-shadow: 0.1rem 0.1rem 0.5rem green;
+        border-radius: 0.6rem;
+        padding: 0.5em;
+    }
+    
+    .register-link{
+        font-size: 1.6rem;
+        margin-top: 1.5em;
+    }
+    
+    .login-message{
+        color: red;
+        font-size: 1.6rem;
+        background: lightgray;
+        padding: 0.5em;
+    }
+    
+    .login-button{
+        width: 100%;
+        margin-top: 1em;
+        padding: 0.5em 0em;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.6rem;
+        background: green;
+        border-style: none;
+        cursor: pointer; 
+        border-radius: 0.6rem;
+        box-shadow: 0.1rem 0.1rem 1rem black;
+    }
+    .contact-form{
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        padding: 3em 0.8em;
+    }
+    
+    .contact-input{
+        width: 70%;
+        padding: 0.7em;
+        font-size: 1.6rem;
+        font-family: 'Roboto', sans-serif;
+        border-radius: 0.6rem;
+    }
+    
+    .contact-input:focus{
+        border: 0.1em solid green;
+        box-shadow: 0.1rem 0.1rem 0.5rem green;
+        border-radius: 0.6rem;
+        padding: 0.7em;
+    }
+    
+    .message{
+        width: 100%;
+        padding: 1em;
+        font-size: 1.6rem;
+        border-radius: 0.6rem;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .message:focus{
+        border: 0.1em solid green;
+        box-shadow: 0.1rem 0.1rem 0.5rem green;
+        border-radius: 0.6rem;
+        padding: 0.8em;
+    }
+    
+    .contact-fields{
+        margin-top: 1.5em;
+    }
+    
+    .contact-form-heading{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 1em;
+        line-height: 3.5rem;
+    }
+    
+    .contact-form-caption{
+        font-size: 1.6rem;
+        margin-bottom: 1em;
+    }
+    
+    .contact-form-label{
+        padding: 0.5em 0em;
+        font-size: 1.6rem;
+    }
+    
+    .optional{
+        opacity: 0.6;
+    }
+    
+    .contact-button{
+        width: 100%;
+        margin-top: 1.5em;
+        padding: 0.5em 0em;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.6rem;
+        background: green;
+        border-style: none;
+        cursor: pointer;  
+        border-radius: 0.6rem;
+        box-shadow: 0.1rem 0.1rem 1rem black;
+    }
+
+    .shopping-request-form{
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        padding: 3em 0.8em;
+    }
+}
+
+/* !? max-width 972px */
+@media screen and (max-width: 972px) and (min-width: 901px) {
+    .wrapper{
+        position: absolute;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .navLinks{
+        display: flex;
+        flex-direction: column;
+        background: #000;
+        width: 100%;
+        z-index: 1;
+        height: 100vh;
+        justify-content: space-evenly;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .navLinks li{
+        opacity: 0;
+    }
+
+    .navLinks li a{
+        text-decoration: none;
+        color: #edf7ff;
+        letter-spacing: 0.1rem;
+        font-size: 4rem;
+        font-weight: bold;
+    }
+
+    .active{
+        transform: translateX(0%);
+    }
+
+   html{
+       overflow-x: hidden;
+   }
+
+    .menu{
+        display: block;
+    }
+
+    @keyframes navLinkFade{
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .toggle .line-1{
+        transform: rotate(-45deg) translate(-5px, 5px);
+    }
+
+    .toggle .line-2{
+        opacity: 0;
+    }
+
+    .toggle .line-3{
+        transform: rotate(45deg) translate(-5px, -5px);
+    }
+
+    .contact{
+        display: flex;
+        width: 98%;
+        height: 7vh;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5em;
+    }
+
+    .quick-benefits-bar{
+        display: none;
+    }
+
+
+    .container{
+        width: 80%;
+    }
+
+    .offer-heading{
+        font-size: 3rem;
+        font-family: 'Open Sans', sans-serif;
+        padding: 0.5em 0.8em;
+        line-height: 1.5;
+    }
+    
+    .fa-times{
+        color: #fd3a5c;
+        padding: 0.5em;
+    }
+    
+    
+    .offer-subheading{
+        font-size: 2rem;
+        font-family: 'Roboto', sans-serif; 
+        line-height: 3rem;
+        padding: 0.5em 0.8em;
+        padding-top: 1.5em;
+        margin-top: 0em;
+    }
+
+    .cta-btns{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 3em 0em;
+    }
+    .shipping-btn{
+        padding: 0.8em;
+        width: 100%;
+        font-size: 2rem;
+        font-weight: normal;
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        box-shadow: 0.1rem 0.1rem 0.8rem black;
+        opacity: 1;
+        text-align: center;
+    }
+    
+    .shopping-btn{
+        border-style: none;
+        padding: 0.8em;
+        width: 100%;
+        font-size: 2rem;
+        font-weight: normal;
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        box-shadow: 0.1rem 0.1rem 0.8rem gray;
+        margin-left: 0em;
+        margin-top: 1.5em;
+        text-align: center;
+        opacity: 1;
+    }
+    
+
+    nav{
+        height:17vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        border-style: none;
+        text-align: center;
+    }
+
+    .logo{
+        font-size: 2.8rem;
+    }
+
+    .phone{
+        margin-top: 0.8em;
+    }
+
+    .phone a{
+        opacity: 1;
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: normal;
+    }
+
+    footer{
+        margin-top: 0em;
+    }
+
+    .footer-links li a{
+        font-size: 2rem;
+        
+    }
+
+    .footer-links{
+        width: 80%;
+    }
+
+    .about-container{
+        width: 60%;
+        margin: 0 auto;
+        height: auto;
+        margin-top: 2em;
+        padding: 0.5em 0.8em;
+        padding-bottom: 5em;
+    }
+
+    .about-container h1{
+        font-size: 2rem;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .about-container p{
+        font-size: 1.6rem;
+        font-family: 'Roboto', sans-serif;
+        width: 100%;
+        line-height: 2;
+    }
+    
+    .questions{
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+    
+    .questions li{
+        font-size: 1.6rem;
+        margin-top: 1em;
+        font-weight: normal;
+    }
+    
+    .intro{
+        margin-top: 1em;
+        margin-bottom: 3em;
+    }
+    
+    .solution{
+        margin-top: 3em;
+        margin-bottom: 3em; 
+    }
+    
+    .about-pains{
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+    
+    .about-pains li{
+        list-style: none;
+        font-size: 1.6rem;
+        font-weight: normal;
+        margin-top: 1em;
+    }
+    
+    .gains{
+        margin-top: 3em;
+        padding-bottom: 1em;
+    }
+    
+    .gains li{
+        list-style: none;
+        font-size: 1.6rem;
+        font-weight: normal;
+        margin-top: 1em
+    }
+    
+    .sourcing-btn{
+        background: #21bf73;
+        width: 100%;
+        font-size: 1.6rem;
+        font-weight: normal;
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        box-shadow: 0.1rem 0.1rem 1rem black;
+    }
+
+    .register-form{
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        padding: 3em 0.8em;
+    }
+    
+    .register-form-caption{
+        font-size: 1.6rem;
+        font-weight: normal;
+        font-family: 'Open Sans', sans-serif;
+        padding-bottom: 1.5em;
+    }
+    
+    .register-fields-labels{
+        font-size: 1.6rem;
+        font-family: 'Roboto', sans-serif;
+        padding-bottom: 0.3em;
+    }
+    
+    .field{
+        padding-top: 1em;
+    }
+    
+    .login-link{
+        font-size: 1.6rem;
+        margin-top: 1.5em;
+    }
+    
+    .register-password-errors{
+        margin-top: 1em;
+    }
+    
+    .password-requirements{
+        margin-top: 1.6em;
+    }
+    
+    .password-requirements li{
+        padding-left: 0.5em;
+    }
+    
+    .password-requirements p{
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+    
+    .user-register-button{
+        width: 100%;
+        margin-top: 1em;
+        padding: 0.5em 0em;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.6rem;
+        background: green;
+        border-style: none;
+        cursor: pointer; 
+        border-radius: 0.6rem;
+        box-shadow: 0.1rem 0.1rem 1rem black;
+    }
+    .login-container{
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 2em;
+    }
+    
+    .login-form{
+        margin-top: 5em;
+        padding: 0em 0.8em;
+    }
+    
+    .login-form-caption{
+        font-size: 2rem;
+        font-weight: normal;
+        font-family: 'Open Sans', sans-serif;
+        padding-bottom: 1.5em;
+    }
+    
+    .login-form-labels{
+        font-size: 1.6rem;
+        font-family: 'Roboto', sans-serif;
+        padding-bottom: 0.3em;
+    }
+    
+    .login-input{
+        width: 100%;
+        padding: 0.5em;
+        font-size: 1.6rem;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 1em;
+        border-radius: 0.5rem;
+    }
+    
+    .login-input:focus{
+        border: 0.1em solid green;
+        box-shadow: 0.1rem 0.1rem 0.5rem green;
+        border-radius: 0.6rem;
+        padding: 0.5em;
+    }
+    
+    .register-link{
+        font-size: 1.6rem;
+        margin-top: 1.5em;
+    }
+    
+    .login-message{
+        color: red;
+        font-size: 1.6rem;
+        background: lightgray;
+        padding: 0.5em;
+    }
+    
+    .login-button{
+        width: 100%;
+        margin-top: 1em;
+        padding: 0.5em 0em;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.6rem;
+        background: green;
+        border-style: none;
+        cursor: pointer; 
+        border-radius: 0.6rem;
+        box-shadow: 0.1rem 0.1rem 1rem black;
+    }
+    .contact-form{
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        padding: 3em 0.8em;
+    }
+    
+    .contact-input{
+        width: 70%;
+        padding: 0.7em;
+        font-size: 1.6rem;
+        font-family: 'Roboto', sans-serif;
+        border-radius: 0.6rem;
+    }
+    
+    .contact-input:focus{
+        border: 0.1em solid green;
+        box-shadow: 0.1rem 0.1rem 0.5rem green;
+        border-radius: 0.6rem;
+        padding: 0.7em;
+    }
+    
+    .message{
+        width: 100%;
+        padding: 1em;
+        font-size: 1.6rem;
+        border-radius: 0.6rem;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .message:focus{
+        border: 0.1em solid green;
+        box-shadow: 0.1rem 0.1rem 0.5rem green;
+        border-radius: 0.6rem;
+        padding: 0.8em;
+    }
+    
+    .contact-fields{
+        margin-top: 1.5em;
+    }
+    
+    .contact-form-heading{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 1em;
+        line-height: 3.5rem;
+    }
+    
+    .contact-form-caption{
+        font-size: 1.6rem;
+        margin-bottom: 1em;
+    }
+    
+    .contact-form-label{
+        padding: 0.5em 0em;
+        font-size: 1.6rem;
+    }
+    
+    .optional{
+        color: #000;
+    }
+    
+    .contact-button{
+        width: 100%;
+        margin-top: 1.5em;
+        padding: 0.5em 0em;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.6rem;
+        background: green;
+        border-style: none;
+        cursor: pointer;  
+        border-radius: 0.6rem;
+        box-shadow: 0.1rem 0.1rem 1rem black;
+    }
+
+    .shopping-request-form{
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        padding: 3em 0.8em;
+    }
+}
+
+/* !? max-width 1200px */
+@media screen and (max-width: 1200px) and (min-width: 973px) {
+    .navLinks{
+        /* width: 60%; */
+        margin: 0 auto;
+        height: 5vh;
+        align-items: center;
+        margin-top: 1em;
+    }
+
+    .contact{
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: space-evenly;
+    }
+
+    .quick-benefits-bar{
+        display: none;
+    }
+
+
+    .container{
+        width: 80%;
+    }
+
+    .offer-heading{
+        font-size: 3rem;
+        font-family: 'Open Sans', sans-serif;
+        padding: 0.5em 0.8em;
+        line-height: 1.5;
+    }
+    
+    .fa-times{
+        color: #fd3a5c;
+        padding: 0.5em;
+    }
+    
+    
+    .offer-subheading{
+        font-size: 2rem;
+        font-family: 'Roboto', sans-serif; 
+        line-height: 3rem;
+        padding: 0.5em 0.8em;
+        padding-top: 1.5em;
+        margin-top: 0em;
+    }
+
+    .cta-btns{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 3em 0em;
+    }
+    .shipping-btn{
+        padding: 0.8em;
+        width: 100%;
+        font-size: 2rem;
+        font-weight: normal;
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        box-shadow: 0.1rem 0.1rem 0.8rem black;
+        opacity: 1;
+        text-align: center;
+    }
+    
+    .shopping-btn{
+        border-style: none;
+        padding: 0.8em;
+        width: 100%;
+        font-size: 2rem;
+        font-weight: normal;
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        box-shadow: 0.1rem 0.1rem 0.8rem gray;
+        margin-left: 0em;
+        margin-top: 1.5em;
+        text-align: center;
+        opacity: 1;
+    }
+    
+
+    nav{
+        height:17vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        border-style: none;
+        text-align: center;
+    }
+
+    .logo{
+        font-size: 2.8rem;
+    }
+
+    .phone{
+        margin-top: 0.8em;
+    }
+
+    .phone a{
+        opacity: 1;
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: normal;
+    }
+
+    footer{
+        margin-top: 0em;
+    }
+
+    .footer-links li a{
+        font-size: 2rem;
+        
+    }
+
+    .footer-links{
+        width: 80%;
+    }
+
+    .about-container{
+        width: 60%;
+        margin: 0 auto;
+        height: auto;
+        margin-top: 2em;
+        padding: 0.5em 0.8em;
+        padding-bottom: 5em;
+    }
+
+    .about-container h1{
+        font-size: 2rem;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .about-container p{
+        font-size: 1.6rem;
+        font-family: 'Roboto', sans-serif;
+        width: 100%;
+        line-height: 2;
+    }
+    
+    .questions{
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+    
+    .questions li{
+        font-size: 1.6rem;
+        margin-top: 1em;
+        font-weight: normal;
+    }
+    
+    .intro{
+        margin-top: 1em;
+        margin-bottom: 3em;
+    }
+    
+    .solution{
+        margin-top: 3em;
+        margin-bottom: 3em; 
+    }
+    
+    .about-pains{
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+    
+    .about-pains li{
+        list-style: none;
+        font-size: 1.6rem;
+        font-weight: normal;
+        margin-top: 1em;
+    }
+    
+    .gains{
+        margin-top: 3em;
+        padding-bottom: 1em;
+    }
+    
+    .gains li{
+        list-style: none;
+        font-size: 1.6rem;
+        font-weight: normal;
+        margin-top: 1em
+    }
+    
+    .sourcing-btn{
+        background: #21bf73;
+        width: 100%;
+        font-size: 1.6rem;
+        font-weight: normal;
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        box-shadow: 0.1rem 0.1rem 1rem black;
+    }
+
+    .register-form{
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        padding: 3em 0.8em;
+    }
+    
+    .register-form-caption{
+        font-size: 1.6rem;
+        font-weight: normal;
+        font-family: 'Open Sans', sans-serif;
+        padding-bottom: 1.5em;
+    }
+    
+    .register-fields-labels{
+        font-size: 1.6rem;
+        font-family: 'Roboto', sans-serif;
+        padding-bottom: 0.3em;
+    }
+    
+    .field{
+        padding-top: 1em;
+    }
+    
+    .login-link{
+        font-size: 1.6rem;
+        margin-top: 1.5em;
+    }
+    
+    .register-password-errors{
+        margin-top: 1em;
+    }
+    
+    .password-requirements{
+        margin-top: 1.6em;
+    }
+    
+    .password-requirements li{
+        padding-left: 0.5em;
+    }
+    
+    .password-requirements p{
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+    
+    .user-register-button{
+        width: 100%;
+        margin-top: 1em;
+        padding: 0.5em 0em;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.6rem;
+        background: green;
+        border-style: none;
+        cursor: pointer; 
+        border-radius: 0.6rem;
+        box-shadow: 0.1rem 0.1rem 1rem black;
+    }
+    .login-container{
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 2em;
+    }
+    
+    .login-form{
+        margin-top: 5em;
+        padding: 0em 0.8em;
+    }
+    
+    .login-form-caption{
+        font-size: 2rem;
+        font-weight: normal;
+        font-family: 'Open Sans', sans-serif;
+        padding-bottom: 1.5em;
+    }
+    
+    .login-form-labels{
+        font-size: 1.6rem;
+        font-family: 'Roboto', sans-serif;
+        padding-bottom: 0.3em;
+    }
+    
+    .login-input{
+        width: 100%;
+        padding: 0.5em;
+        font-size: 1.6rem;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 1em;
+        border-radius: 0.5rem;
+    }
+    
+    .login-input:focus{
+        border: 0.1em solid green;
+        box-shadow: 0.1rem 0.1rem 0.5rem green;
+        border-radius: 0.6rem;
+        padding: 0.5em;
+    }
+    
+    .register-link{
+        font-size: 1.6rem;
+        margin-top: 1.5em;
+    }
+    
+    .login-message{
+        color: red;
+        font-size: 1.6rem;
+        background: lightgray;
+        padding: 0.5em;
+    }
+    
+    .login-button{
+        width: 100%;
+        margin-top: 1em;
+        padding: 0.5em 0em;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.6rem;
+        background: green;
+        border-style: none;
+        cursor: pointer; 
+        border-radius: 0.6rem;
+        box-shadow: 0.1rem 0.1rem 1rem black;
+    }
+    .contact-form{
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        padding: 3em 0.8em;
+    }
+    
+    .contact-input{
+        width: 70%;
+        padding: 0.7em;
+        font-size: 1.6rem;
+        font-family: 'Roboto', sans-serif;
+        border-radius: 0.6rem;
+    }
+    
+    .contact-input:focus{
+        border: 0.1em solid green;
+        box-shadow: 0.1rem 0.1rem 0.5rem green;
+        border-radius: 0.6rem;
+        padding: 0.7em;
+    }
+    
+    .message{
+        width: 100%;
+        padding: 1em;
+        font-size: 1.6rem;
+        border-radius: 0.6rem;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .message:focus{
+        border: 0.1em solid green;
+        box-shadow: 0.1rem 0.1rem 0.5rem green;
+        border-radius: 0.6rem;
+        padding: 0.8em;
+    }
+    
+    .contact-fields{
+        margin-top: 1.5em;
+    }
+    
+    .contact-form-heading{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom: 1em;
+        line-height: 3.5rem;
+    }
+    
+    .contact-form-caption{
+        font-size: 1.6rem;
+        margin-bottom: 1em;
+    }
+    
+    .contact-form-label{
+        padding: 0.5em 0em;
+        font-size: 1.6rem;
+    }
+    
+    .optional{
+        color: #000;
+    }
+    
+    .contact-button{
+        width: 100%;
+        margin-top: 1.5em;
+        padding: 0.5em 0em;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.6rem;
+        background: green;
+        border-style: none;
+        cursor: pointer;  
+        border-radius: 0.6rem;
+        box-shadow: 0.1rem 0.1rem 1rem black;
+    }
+
+    .shopping-request-form{
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        padding: 3em 0.8em;
+    }
+}
+
+/* todo end of media queries */

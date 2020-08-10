@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Shopping assistance
+{% endblock title %}
+
+{% block content %}
+    <form class="shopping-request-form" action="" method="post">
+        <h3 class="contact-form-label"><strong>Briefly tell us what you want to import</strong></h3>
+        <div class="contact-fields">
+        <p class="contact-form-label">{{form.name.label}}</p>
+        <div>
+            {{form.name}}
+        </div>
+        </div>
+       <div class="contact-fields">
+        <p class="contact-form-label">{{form.email.label}}</p>
+        <div>
+            {{form.email}}
+        </div>
+       </div>
+        <div class="contact-fields">
+        <p class="contact-form-label">{{form.phone.label}}</p>
+        <div>
+            {{form.phone}}
+        </div>
+        </div>
+        <div class="contact-fields">
+        <p class="contact-form-label">Briefly tell us what you want to import</p>
+        <div>
+            {{form.description}}
+        </div>
+        </div>
+        {% csrf_token %}
+    <div>
+        <input class="contact-button" type="submit" value="Send us your request">
+    </div>
+    </form>
+{% endblock content %}

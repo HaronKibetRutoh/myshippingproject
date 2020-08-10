@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    Success
+{% endblock title %}
+    
+
+{% block content %}
+    <div class="success-page">
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <p class="success">{{message}}</p>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    </div>
+{% endblock content %}
+    

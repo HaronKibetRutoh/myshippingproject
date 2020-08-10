@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    Register
+{% endblock title %}
+
+
+{% block content %}
+    <form class="register-form" action="" method="post">
+        {% csrf_token %}
+        <p class="register-form-caption">Create your account</p>
+        <div class="field">
+            <p class="register-fields-labels">{{form.name.label}}</p>
+            <div>
+                {{form.name}}
+            </div>
+        </div>
+        <div class="field">
+           <p class="register-fields-labels">{{form.email.label}}</p>
+            <div>
+                {{form.email}}
+            </div>
+        </div>
+        <div class="field">
+            <p class="register-fields-labels">{{form.phone.label}}</p>
+            <div>
+                {{form.phone}}
+            </div>
+        </div>
+        <div class="field">
+            <p class="register-fields-labels">Create password</p>
+            <div>
+                {{form.password1}}
+                <p class="register-password-errors">{{form.password1.errors}}</p>
+            </div>
+        </div>
+        <div class="password-requirements">
+            <p>Password must contain at least 8 characters</p>
+            <p>Password must contain at least 1 letter and a number</p>
+        </div>
+        
+        <div>
+            <input type="submit" class="user-register-button" value="Create account">
+        </div>
+
+        <p class="login-link">Already have an account? <a style="color: #f2f2f2; font-weight: bold;" href="{% url 'users:signin' %}">Login </a></p>
+    </form>
+{% endblock content %}
+    
