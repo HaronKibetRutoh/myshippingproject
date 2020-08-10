@@ -10,7 +10,7 @@
         Shipping
     {% endblock title %}
         </title>
-    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% staticfiles 'css/base.css' %}">
     {% fontawesome_5_static %}
     <script type="text/javascript">
         var user = '{{request.user}}'
@@ -67,6 +67,6 @@
             </div>
         </footer>
     </div>
-    <script type="text/javascript" src="{% static 'js/base.js' %}"></script>
+    <script type="text/javascript" src="{% staticfiles 'js/base.js' %}"></script>
 </body>
 </html>
