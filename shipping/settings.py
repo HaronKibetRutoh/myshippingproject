@@ -25,7 +25,7 @@ SECRET_KEY = 'sklgdfr9nydw3dks06vqf28r36z)jr=e*68rw#_i#cfl5jtsp3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['161.35.161.86', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['161.35.161.86', 'localhost', '127.0.0.1', 'www.shipfromchinatokenya.com', 'shipfromchinatokenya.com',]
 
 
 # Application definition
