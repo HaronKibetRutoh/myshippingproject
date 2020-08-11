@@ -25,7 +25,7 @@ SECRET_KEY = 'sklgdfr9nydw3dks06vqf28r36z)jr=e*68rw#_i#cfl5jtsp3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['161.35.161.86', 'localhost',]
+ALLOWED_HOSTS = ['161.35.161.86', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'accounts.apps.AccountsConfig',
+    'users.apps.UsersConfig',
     'quote.apps.QuoteConfig',
     'contact.apps.ContactConfig',
 
@@ -152,4 +152,4 @@ STATIC_ROOT  = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 
-AUTH_USER_MODEL = 'accounts.CustomUser'
+AUTH_USER_MODEL = 'users.CustomUser'

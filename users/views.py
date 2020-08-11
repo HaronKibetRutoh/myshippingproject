@@ -30,7 +30,6 @@ def register(request):
         if form.is_valid():
             name = form.cleaned_data.get('name')
             email = form.cleaned_data.get('email')
-            # phone = form.cleaned_data.get('phone')
             password = form.cleaned_data.get('password')
             form.save()
             messages.success(request, "Account created successfully")

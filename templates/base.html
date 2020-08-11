@@ -35,10 +35,10 @@
                     <!-- <li><a href="">How it works</a></li> -->
                     <li><a href="{% url 'contact:contact' %}">Contact us</a></li>
                     {% if user.is_authenticated %}
-                    <li><a class="logout" href="{% url 'accounts:logout' %}">Logout</a></li>
+                    <li><a class="logout" href="{% url 'users:logout' %}">Logout</a></li>
                     {% else %}
-                    <li><a class="login" href="{% url 'accounts:signin' %}">Login</a></li>
-                    <li><a class="register" href="{% url 'accounts:register' %}">SignUp</a></li>
+                    <li><a class="login" href="{% url 'users:signin' %}">Login</a></li>
+                    <li><a class="register" href="{% url 'users:register' %}">SignUp</a></li>
                     {% endif %}
                 </ul>
             </nav>
@@ -57,10 +57,10 @@
                 <li><a href="{% url 'quote:about' %}">About</a></li>
                 <li><a href="{% url 'contact:contact' %}">Contact us</a></li>
                 {% if user.is_authenticated %}
-                    <li><a href="{% url 'accounts:logout' %}">Logout</a></li>
+                    <li><a href="{% url 'users:logout' %}">Logout</a></li>
                     {% else %}
-                    <li><a href="{% url 'accounts:signin' %}">Login</a></li>
-                    <li><a href="{% url 'accounts:register' %}">SignUp</a></li>
+                    <li><a href="{% url 'users:signin' %}">Login</a></li>
+                    <li><a href="{% url 'users:register' %}">SignUp</a></li>
                     {% endif %}
                 <li><a href="mailto:kibetharon@outlook.com">Email us</a></li>
                 <li><a href="">Call us</a></li>
